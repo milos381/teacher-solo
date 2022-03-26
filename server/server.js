@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session)
-const MONGODB_URI = "mongodb+srv://milos381:pass@cluster0.3relt.mongodb.net/teacher-app?retryWrites=true&w=majority"
+const MONGODB_URI = ""
 
 const app = express()
 const store = new MongoDBStore({

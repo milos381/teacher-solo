@@ -8,7 +8,7 @@ const Teacher = require('../models/teacher');
 const Student = require('../models/student');
 // const { userInfo } = require('os');
 
-let API_KEY = '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'
+let API_KEY = ''
 sgMail.setApiKey(API_KEY)
 
 exports.teacherList = (req, res, next) => {
@@ -85,7 +85,7 @@ exports.postSignup = (req, res, next) => {
             .then((result) => {
                 sgMail.send({
                     to: email,
-                    from: 'milospopovic.us@gmail.com',
+                    from: '',
                     subject: 'Success!',
                     html: '<h1>Sucessfully signed up!</h1>'
                   })
